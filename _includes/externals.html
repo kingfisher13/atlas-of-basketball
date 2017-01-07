@@ -1,0 +1,22 @@
+{% if page.externals %}
+  <!-- D3 -->
+  {% if page.externals contains 'd3' %}
+    <script type="text/javascript">
+      {% include /externals/d3.min.js %}
+    </script>
+  {% endif %}
+
+  <!-- D3-Queue -->
+  {% if page.externals contains 'd3-queue' %}
+    <script type="text/javascript">
+      {% include /externals/d3-queue.js %}
+    </script>
+  {% endif %}
+
+  <!-- Underscore -->
+  {% if page.externals contains 'underscore' %}
+    <script type="text/javascript">
+      {% include /externals/underscore-min.js %}
+    </script>
+  {% endif %}
+{% endif %}
