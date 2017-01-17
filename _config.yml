@@ -1,9 +1,9 @@
-title: Basketball Visualizations
+title: Atlas of Basketball
 email: josh@kfcartography.com
 description: >
   A blog to explore various ways to represent basketball, specifically NBA,
   data. Developed by Josh Ryan.
-# baseurl: "/basketball-visualizations" # the subpath of your site, e.g. /blog
+# baseurl: "/atlasofbasketball" # the subpath of your site, e.g. /blog
 url: "https://kingfisher13.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: karenkingfisher
 github_username:  kingfisher13
