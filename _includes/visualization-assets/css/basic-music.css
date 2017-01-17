@@ -1,0 +1,12 @@
+/*
+* Basic Music Visualization
+*/
+
+.visualization {
+  width: 100%;
+}
+
+.player-name {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
