@@ -1,0 +1,40 @@
+/*
+* Small Multiples Visualization CSS
+*/
+
+.visualization {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.chart {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  transition: all 100ms linear;
+}
+
+.ball-start--circle,
+.ball-movement--line {
+  fill: none;
+  opacity: 0.4;
+  stroke: #FF5722;
+  stroke-width: 2px;
+}
+
+.player-movement--line {
+  fill: none;
+  stroke-width: 2px;
+}
+
+.caption--timestamp {
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.caption--made {
+  fill: #03A9F4;
+}
+
+.caption--missed {
+  fill: #f44336;
+}

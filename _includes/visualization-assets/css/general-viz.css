@@ -1,0 +1,50 @@
+/*
+* General Visualization CSS
+*/
+
+.controls {
+  margin: 10px 0;
+  position: relative;
+}
+
+.controls--title {
+  margin: 0;
+}
+
+.viz-button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #1a1a1a;
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+
+.viz-button:hover,
+.viz-button.selected {
+  background-color: #ccc;
+}
+
+.menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+}
+
+.menu--select-button {
+  background-color: #fff;
+  border: none;
+  color: #1a1a1a;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.menu--select-button:hover,
+.menu--select-button.selected {
+  background-color: #ccc;
+}
