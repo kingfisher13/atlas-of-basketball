@@ -81,7 +81,7 @@ function drawElements() {
         id++;
         return 'chart' + id;
       })
-      .attr('data-player', (d) => { return players[d.player].name; })
+      .attr('data-player', d => players[d.player].name)
     .append('svg')
       .style('width', svgWidth + 'px')
       .style('height', (svgHeight + 30) + 'px');
@@ -96,7 +96,7 @@ function drawElements() {
   let ball = svg.append('g').attr('class', 'ball-movement');
   ball.append('path')
       .attr('class', 'ball-movement--line')
-      .attr('d', d => { return line(0)(d.data); });
+      .attr('d', d => line(0)(d.data));
 
   ball.append('circle')
       .attr('class', 'ball-start--circle')
@@ -121,7 +121,13 @@ function drawElements() {
     .attr('class', 'caption--text caption--timestamp')
     .attr('x', 5)
     .attr('y', 174)
-    .text(d => '(Q' + d.data[1][0] + ' - ' + (Math.round((d.data[1][2] / 60) * 100) / 100) + 'm)');
+    .text(d => {
+      let text = '(Q' + d.data[1][0] + ' - ';
+      let totalSeconds = d.data[1][2];
+      let minutes = Math.floor(totalSeconds / 60);
+      let seconds = Math.round(totalSeconds - (minutes * 60));
+      return text + minutes + ':' + seconds + ')';
+    });
 
   caption.append('text')
     .attr('class', 'caption--text')
