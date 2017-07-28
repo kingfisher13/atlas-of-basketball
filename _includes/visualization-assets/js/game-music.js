@@ -12,6 +12,7 @@ const MAXSPEED = 30; // 15 is arbitrary max speed
 let maxPlayLength = 0;
 
 let players = {};
+let PLAYS = [];
 
 let COLORS = {
   ball: '#F5551B',
@@ -22,6 +23,7 @@ let COLORS = {
 window.onload = function () {
   svgW = d3.select('.visualization').node().getBoundingClientRect().width;
   prepPlayerNames();
+  prepData();
   initElements();
   calcDeltas();
   drawLines();
@@ -39,6 +41,17 @@ function prepPlayerNames() {
         name: p.firstname + ' ' + p.lastname,
         color: COLORS[DATA[side].abbreviation]
       };
+    });
+  }
+}
+
+function prepData() {
+  for (side in DATA) {
+    DATA[side].made3s = [];
+    DATA[side].missed3s = [];
+    DATA[side].data.forEach(function (play) {
+      if (play[play.length - 1][6].eventmsgtype === 1) DATA[side].made3s.push(play);
+      else DATA[side].missed3s.push(play);
     });
   }
 }
