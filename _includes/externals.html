@@ -13,6 +13,20 @@
     </script>
   {% endif %}
 
+  <!-- D3-Contour -->
+  {% if page.externals contains 'd3-contour' %}
+    <script type="text/javascript">
+      {% include /externals/d3-contour.js %}
+    </script>
+  {% endif %}
+
+  <!-- D3-Scale-Chromatic -->
+  {% if page.externals contains 'd3-scale-chromatic' %}
+    <script type="text/javascript">
+      {% include /externals/d3-scale-chromatic.js %}
+    </script>
+  {% endif %}
+
   <!-- Underscore -->
   {% if page.externals contains 'underscore' %}
     <script type="text/javascript">
