@@ -89,7 +89,7 @@ function drawElements() {
   svg.append('g')
     .attr('class', 'court-image')
     .append('svg:image')
-      .attr('xlink:href', '/img/fullcourt-threes.svg')
+      .attr('xlink:href', 'http://kingfisher13.github.io/atlas-of-basketball/img/fullcourt-threes.svg')
       .attr('width', svgWidth)
       .attr('height', svgHeight);
 
