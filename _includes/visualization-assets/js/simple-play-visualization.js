@@ -108,7 +108,7 @@ var COURT = (function () {
       .attr('class', 'court--image')
       .attr('transform', 'translate(' + margin + ', ' + (margin / 2) + ')')
       .append('svg:image')
-      .attr('xlink:href', '/img/halfcourt.svg')
+      .attr('xlink:href', 'http://kingfisher13.github.io/atlas-of-basketball/img/halfcourt.svg')
       .attr('width', courtW)
       .attr('height', courtH);
 
