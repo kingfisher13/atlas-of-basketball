@@ -134,7 +134,6 @@ let COURT = function (element, gravityLevel, id) {
     contourContext.scale(NBAResolution, NBAResolution);
 
     // IDW to generate gravity raster
-    console.log(DATA);
     let consoleCount = 0;
     DATA.rasterData[id] = DATA.gameData.map(play => {
       let cells = [];
